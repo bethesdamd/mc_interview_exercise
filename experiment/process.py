@@ -1,7 +1,7 @@
 #  Morning Consult
 #  Your task is to write a program that returns all books that have been recommended n times.
 
-# Use this as a test, shows one title with 5 recommendations:  "The Shelfish Game"
+# Use this as a test, shows one title with 5 recommendations:  "The Selfish Gene"
 # cut -d$'\t' -f1 master_list |sort| uniq -c|sort -n
 
 import sys
@@ -13,7 +13,7 @@ if len(args) != 2:
     raise Exception("You must provide an argument for the number of recommendations.")
 
 num_recs = int(args[1])
-FILENAME = 'master_list'
+FILENAME = '../master_list'
 
 gen_lines = (line.strip() for line in open(FILENAME, 'r'))
 

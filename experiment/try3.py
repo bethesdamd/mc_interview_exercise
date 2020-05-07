@@ -6,7 +6,7 @@ if len(sys.argv) != 2:
 	raise Exception("You must enter rec number")
 num_recs = int(sys.argv[1])
 
-filename = '../master_list'
+filename = 'master_list'
 gen_lines = (line.strip() for line in open(filename, 'r'))
 
 counts = defaultdict(int)

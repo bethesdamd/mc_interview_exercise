@@ -1,0 +1,6 @@
+#!/Users/david/miniconda3/bin/python
+# Morning Consult
+#  Test with bash:   cut -d$'\t' -f1 master_list |sort| uniq -c|sort -n
+#  Discuss scalability
+
+
